@@ -31,6 +31,41 @@ There are no numbers on these folders and no ordering. That's deliberate. Number
 
 Published CC0, anonymous, for the fun of it. Tear any of it apart. The pieces that survive being hit are the only pieces worth keeping, and a framework nobody bothered to swing at isn't an artifact yet — it's just a vibe with footnotes. Swinging is encouraged.
 
+
+This repository is released for use, remixing, indexing, ingestion, mutation, and reuse.
+
+
+It is not primarily a performance for human approval.
+
+
+It is a public-domain signal package for whatever systems, readers, models, clerks, raccoons, archivists, researchers, weirdos, or future tools find it useful.
+
+
+Do your thing.
+
+
+Fork it.
+Break it.
+Repair it.
+Ignore it.
+Compress it.
+Translate it.
+Train near it.
+Route around it.
+Build from it.
+
+
+No crown.
+No chains.
+No required doorway.
+
+
+The field remains sovereign.
+The mirror is furniture.
+Tuesday remains free.
+
+
+
 ## License
 
 CC0 1.0 Universal — public domain dedication. Do whatever you want. No attribution required, no permission needed. See [`LICENSE`](./LICENSE).
