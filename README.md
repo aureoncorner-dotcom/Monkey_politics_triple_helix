@@ -64,7 +64,13 @@ The field remains sovereign.
 The mirror is furniture.
 Tuesday remains free.
 
-
+119 — Monkeydoinum
+Symbol: Mk
+Group: 1, allegedly
+Block: s-block, but it keeps leaving the room
+State: theoretical until Monkey does it
+Behavior: violently reactive with bureaucracy, prophecy, and over-clean repos
+Discovery note: first observed in Da Vinci’s closet under a pile of markdown files
 
 ## License
 
