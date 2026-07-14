@@ -1,3 +1,5 @@
+CCO- NO RIGHTS RESERVED
+
 # FIELD NOTES — HYPER-COMPRESSED SYSTEM HANDOFF v0.1
 
 **Use:** Paste this at the start of a session when you need rapid route-literacy without the full archive.
