@@ -1,0 +1,76 @@
+BASKET RETRIEVAL PACKET - 16 OCTOBER 2026
+Prepared for Andrew Dube / Pattern Monkey.
+
+RESULT
+The Commission continuation gap is closed by an official presidential order. The docket and deletion-support gaps are substantially narrowed by additional primary records. The actual Blanche instrument, operational-use trace, full verification record and remaining procurement originals were not obtained. Requests are prepared but UNSENT. No case number, response deadline, denial, nonresponse or fee commitment is invented.
+
+IMPORTANT CORRECTIONS TO THE EARLIER REGISTER
+- EO 14354, signed September 29, 2025 and effective September 30, explicitly lists the Religious Liberty Commission in section 1(p) and continues the listed committees through September 30, 2027. This was an existing 2025 instrument missed by the earlier search, not a newly created 2026 extension.
+- The paginated public docket contains October activity even though the cached CourtListener search summary stopped at September 8. ECF 198/198-1 requested an extension; text-only ECF 199 granted October 16 as the proposal deadline. The proposed order attached to ECF 198 must not be mistaken for the later entered order.
+- The July deletion record includes a produced 17-page screenshot exhibit, not only declarations. Screenshots, sworn accounts and a complete audit remain different evidentiary objects.
+- The section 208 instrument has a special statutory public-access route. OGE directs requests for another agency's waivers to that agency using Form 201. The official current form and DOJ's published DEO email route are included. Surrounding communications are addressed by separate FOIA drafts.
+
+THE EIGHT DEMANDS
+
+R01 - Blanche 208(b)(1) instrument and reconciliation
+Status: not_obtained
+Instrument absent from inspected public record; special Form 201 route and separate existing-records FOIA drafts prepared. No request submitted.
+Next files: requests/01_DOJ_Form201_Instrument_Request.txt, requests/02_DOJ_Existing_Reconciliation_Records_FOIA.txt
+
+R02 - Named application import and dataset-to-enforcement trace
+Status: open
+New declarations establish reported Box-to-OneDrive downloads and repeat denials of operational use. No named-application import or enforcement trace obtained.
+Next files: requests/03_ICE_CMS_Lineage_and_Deletion_FOIA.txt
+
+R03 - Deletion verification scope and support
+Status: partly_obtained
+Three additional declarations, the 17-page screenshot production and correspondence obtained and inspected. Full logs, inventories, authentication context and coverage remain open.
+Next files: requests/03_ICE_CMS_Lineage_and_Deletion_FOIA.txt, requests/04_CMS_Transfer_and_Verification_FOIA.txt
+
+R04 - J&A-25-0266 and FY25-00257 original attachments
+Status: not_obtained
+Official notices and exact filenames identified; originals not obtained. Public download failure is not a withholding decision.
+Next files: requests/09_Public_SAM_Attachments_First.txt, requests/05_ICE_Procurement_Originals_and_Exit_FOIA.txt, requests/06_DHS_BPA_Original_and_Rights_FOIA.txt
+
+R05 - Original 2022 source selection chain
+Status: leads_identified
+Official award/justification and related May notice located; original solicitation, evaluation and complete action chain remain uninspected.
+Next files: requests/05_ICE_Procurement_Originals_and_Exit_FOIA.txt
+
+R06 - Alternatives, rights, portability and funded transition
+Status: partly_obtained
+Existing primary justifications describe rights and transition constraints; actual license/contract rights, underlying evaluations and funded exit terms remain uninspected.
+Next files: requests/05_ICE_Procurement_Originals_and_Exit_FOIA.txt, requests/06_DHS_BPA_Original_and_Rights_FOIA.txt
+
+R07 - Post-September 8 docket activity
+Status: partly_obtained
+ECF 198 and 198-1 obtained; mirror reproduces ECF 199 granting October 16 deadline. Mirror through ECF 200 on October 13 inspected. Same-day proposal and any later order remain to be retrieved.
+Next files: requests/08_Court_Docket_Refresh_Instructions.txt
+
+R08 - Commission continuation and finalization
+Status: extension_closed_finalization_open
+EO 14354 section 1(p) continues Commission through September 30, 2027. Final adopted report or finalization record not obtained; DOJ still lists draft and postponed meeting.
+Next files: requests/07_Commission_Finalization_Public_Access_Request.txt
+
+WHAT IS INSIDE
+- sources/new: newly retrieved filed PDFs, the continuation order and meeting notice, official Form 201, congressional request letters, and archived relevant web pages with text extracts.
+- sources/previously_held: the prior core custody, procurement and Blanche instruments needed to read the new material in context.
+- Deletion_Exhibit_Inspection.txt: a page-by-page account of the 17-page exhibit, including its redactions and limits.
+- Docket_Excerpt_197-200.txt: the reproduced late docket entries with provenance and coverage limits.
+- requests: nine files covering the special-access instrument request, existing reconciliation records, ICE and CMS data controls, ICE and DHS procurement originals and exit terms, Commission finalization, official docket refresh and public attachment downloads.
+- Retrieval_Status.json: all eight demand IDs, current states, next files and empty submission/tracking fields.
+- SOURCE_MANIFEST.json and CHECKSUMS.sha256: URLs, download dates where recorded and integrity checks. Hashes identify bytes, not the truth of a source or completeness of production.
+
+SUBMISSION REQUIREMENTS
+Nothing has been submitted. Complete the actual reply address on the request drafts. Form 201 also requires occupation and the relevant on-behalf-of answer/details, plus the applicant's own signature and date. No agency portal account or PACER account was created or used. No fees were accepted. The prepared drafts do not create a legal response clock.
+
+Use the public SAM downloads first for the two posted justifications; the FOIA drafts are a fallback if the public originals remain inaccessible. The original PDFs remain unverified until read. A mirror's text transcription or AI summary does not substitute for a posted original.
+
+SOURCE LIMITS
+All three ECF 180 attachments are sworn accounts of the declarants' reported conduct and reasonable inquiry; they are not independent audits. ECF 182-3 preserves redacted screenshots. ECF 182-4 preserves counsel's explanation and the request for an explanatory declaration. Matching names or an ELITE folder do not prove matching contents or application ingestion. The complete person-level file and raw forensic logs were not obtained.
+
+The public docket mirror was inspected through ECF 200 dated October 13 and displayed an October 16 update. A current official docket report is still needed for an exhaustive same-day check. No absent filing is inferred from an earlier mirror capture.
+
+The Commission resources page still calls the report a draft and its upcoming-events page still says the August 17 meeting was postponed. The June announcement's final draft wording is not treated as a final adoption record. Continuation authority and report finalization are separate demands.
+
+Congressional letters in the packet establish requests made by their signatories, not agency answers or adjudicated findings. They are provided as retrieval aids and are not used to close any of the eight demands.
