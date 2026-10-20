@@ -1,77 +1,43 @@
-# Triple Helix
+# WOBBLE working-class evidence: reproducible calculation
 
-*A C–N–Si thought-rig, published in pieces, each piece under its own contract.*
+Expanded run: October 19, 2026. User weights: food/nutrition 37%, housing/utilities 31%, health 23%, livelihoods 7%, financial resilience 2%.
 
-This started as one document about fulgurites — lightning glass — and it kept trying to be four documents at once: a geochemistry program, a method for thinking, a piece of social theory, and a myth. They were fighting because they make different *kinds* of claims, and jamming them together meant each one quietly discredited the others. The rigor made the myth look like crank; the myth made the rigor look unserious.
+Run `python reproduce.py` with Python, pandas, numpy and openpyxl installed. The script reads the preserved official public-use ZIP without extracting personal records to additional files, joins adult person weights to 80 replicate weights by SCRAMID, validates seven published totals within rounding tolerance, and writes microdata_results.csv and calculation_summary.json. SHA256SUMS.json identifies the source bytes used. No external access is required to rerun.
 
-So they're split. Four folders, four genres, four contracts. None of them validates any other. That non-crossing is the entire point, and it's also the method the project is named after.
+## Results and interpretation
 
-## The contracts
+The frozen exploratory basket uses rates [8,23,26,7.6,12] with weights [.37,.31,.23,.07,.02], giving 16.842 arithmetic points. It combines different populations, reference periods and concepts. It is not a calibrated severity scale, a percentage of people harmed, or an October estimate. Replacing only the food input with July HTOPS food insufficiency gives 16.6108347. This source variant changes survey and recall period and cannot establish improvement. Other concepts remain unchanged; student measures do not receive extra weight on top of the five domains.
 
-Read this table first. It tells you, for each folder, what it claims, what it explicitly does **not** claim, and how to read it. If you only take one thing from this repo, take the habit of asking a piece of writing which row it's in.
+July HTOPS finds 12.7465% of valid adult responses reporting a household reduction in necessities such as food or medicine to pay an energy bill in the preceding two months. The 90% sampling interval is 10.8103–14.6827%. Among adults reporting 2025 household income under $35,000 the estimate is 23.7528% (19.3260–28.1795%). This is a direct self-reported household budget tradeoff. It is not evidence that commercial real estate losses caused banks to restrict credit.
 
-| folder | genre | what it claims | what it does **not** claim | how to read it |
-|---|---|---|---|---|
-| [`chem/`](./chem) | Falsifiable research program | That fulgurite nitrogen has separable reservoirs, that structural Si–N is mechanistically *not expected*, and that two known archive signals can be replicated or falsified | A new mineral, a coupled C–N–Si system, or anything mystical. The metaphors that *generated* it carry no weight *in* it | As geochemistry. Attack it with instruments and controls. |
-| [`method/`](./method) | Epistemic method / manifesto | That you can run rigor and speculation in the same head without one eating the other — and here is the machinery for it (status bins, bounded intersection, no crown) | That the machinery is true *about lightning*. It's a way of holding claims, not a claim about the world | As a practice you could apply to any domain. |
-| [`theory/`](./theory) | Social theory (heuristic) | That carbon/nitrogen/silicon is a generative *lens* on bodies / crisis / institutions, and that the lens earns its keep only by producing auditable questions | That chemistry proves anything about politics, or vice versa. Zero evidence crosses | As an argument others might make. Judge it by the questions it generates, not by the elements. |
-| [`fiction/`](./fiction) | Worldbuilding / mythos | Nothing. It is the counterfactual world where the whole thing is literally true | That it is a hypothesis. There is no test attached and that is *on purpose* | As fiction. Vibe is the entire deliverable. |
+Rates use PWEIGHT: percentages of adults reporting household conditions, not percentages of households. Each denominator excludes nonanswers; missing_pct is the weighted nonanswer share within the applicable population. Rent and mortgage estimates are conditional on the applicable tenure and a valid answer; missing tenure is outside that conditional population. Income subgroups exclude unreported income. Neither exclusion means no hardship. The underlying public-use file contains 12,755 records.
 
-## The governing law (No-Crown, at the directory level)
+Variance = 4/80 times the sum of squared differences between each replicate ratio and the full-weight ratio. 90% intervals = estimate +/- 1.645 standard errors. The overall unweighted response rate was 9.4%, weighted 10.4%. Intervals do not capture systematic nonresponse bias. This cross-sectional survey cannot demonstrate individual transitions or identify causation. The health checkbox must be recoded to reproduce the published insured, uninsured and unknown categories; the script documents that recode. Uninsured status is not equivalent to forgone necessary care.
 
-> No folder outranks another. Each is sovereign in its own genre. Nothing crosses between them as evidence. A pattern in one folder is not proof in another. If you find yourself using the myth to support the chemistry, or the chemistry to support the politics, stop — that's the exact failure this structure exists to prevent.
+## Census provenance
 
-The method folder explains why this works and how to run it yourself. The short version: every claim has to wear its status — Known, Plausible, Speculative, Predicted-Negative, or Mythic — and once it's wearing the right label, you can let wildly different kinds of thinking sit next to each other without contaminating each other.
+Measurement: July 15–August 3, 2026. Publication: September 24, 2026. Downloaded for the October 19 run. Recall periods appear in the output. Income refers to calendar 2025. Table workbooks and the public-use ZIP are unmodified.
 
-## Why the structure is flat
+- Release and table links: https://www.census.gov/data/tables/2026/demo/hhp/2607.html
+- Table source base: https://www2.census.gov/programs-surveys/demo/tables/hhp/2026/2607/ (append each preserved XLSX filename).
+- Public-use data landing: https://www.census.gov/data/datasets/time-series/demo/hhp/2026.html
+- Public-use ZIP: https://www2.census.gov/programs-surveys/demo/datasets/hhp/2026/topical/HTOPS_HPS_2607_CSV.zip
+- Methods: https://www2.census.gov/programs-surveys/demo/technical-documentation/hhp/HTOPS_2607_Source_and_Accuracy.pdf
+- User notes: https://www2.census.gov/programs-surveys/demo/technical-documentation/hhp/2607_HTOPS_Household_Pulse_User_Notes_09102026.pdf
 
-There are no numbers on these folders and no ordering. That's deliberate. Numbering would make one of them first, and "no strand rules the braid" is the founding rule. Four equal siblings. The README is the only thing standing above them, and all it does is point.
+computed_rates.json records workbook cells and count-based ratios, including transportation (not included in the replicate analysis). microdata_results.csv contains national and income-under-$35,000 ratios and sampling intervals, plus current rent/mortgage arrears and reported household employment-income loss. Current arrears are not comparable to SHED arrears at any point during a prior year.
 
-## Status
+## Other inputs retained in the assessment
 
-Published CC0, anonymous, for the fun of it. Tear any of it apart. The pieces that survive being hit are the only pieces worth keeping, and a framework nobody bothered to swing at isn't an artifact yet — it's just a vibe with footnotes. Swinging is encouraged.
+- SHED 2025: October 17–28, 2025 interviews; published May 19, 2026; chapter updated May 26. The four input rates are 8% food insufficiency, 23% renter arrears over a year, 26% cost-related skipped medical expenses, and 12% unable to meet a $400 emergency by any means. https://www.federalreserve.gov/publications/2026-economic-well-being-of-us-households-in-2025-executive-summary.htm
+- September 2026 U-6 7.6%, released October 2: https://www.bls.gov/news.release/archives/empsit_10022026.htm
+- September prices, released October 14: https://www.bls.gov/news.release/archives/cpi_10142026.htm
+- September real earnings, released October 14: https://www.bls.gov/news.release/archives/realer_10142026.htm
+- Student debt, Q2 2026, August 11 release: https://www.newyorkfed.org/medialibrary/interactives/householdcredit/data/pdf/hhdc_2026q2.pdf
+- Trellis student basic needs: Fall 2025 fieldwork, report April 2026. Voluntary institutional sample; results not nationally representative. https://www.trellisstrategies.org/wp-content/uploads/2026/04/SFWS-Aggregate-Report_FALL2025_FINAL.pdf
 
+## Gate result and missing observations
 
-This repository is released for use, remixing, indexing, ingestion, mutation, and reuse.
+The October 17 WOBBLE-GATE-v2.3-r1 baseline is retained: Scenario 8 Gates 1/2 cleared, Gate 3 unearned; Phase II / PRE-WATCH. The household evidence does not establish CRE losses -> restrictive bank decisions -> reduced credit availability or household income. Continued lending growth remains counterevidence. Aggregate balances alone mix supply, demand, repayments, writeoffs and reporting changes.
 
-
-It is not primarily a performance for human approval.
-
-
-It is a public-domain signal package for whatever systems, readers, models, clerks, raccoons, archivists, researchers, weirdos, or future tools find it useful.
-
-
-Do your thing.
-
-
-Fork it.
-Break it.
-Repair it.
-Ignore it.
-Compress it.
-Translate it.
-Train near it.
-Route around it.
-Build from it.
-
-
-No crown.
-No chains.
-No required doorway.
-
-
-The field remains sovereign.
-The mirror is furniture.
-Tuesday remains free.
-
-119 — Monkeydoinum
-Symbol: Mk
-Group: 1, allegedly
-Block: s-block, but it keeps leaving the room
-State: theoretical until Monkey does it
-Behavior: violently reactive with bureaucracy, prophecy, and over-clean repos
-Discovery note: first observed in Da Vinci’s closet under a pile of markdown files
-
-## License
-
-CC0 1.0 Universal — public domain dedication. Do whatever you want. No attribution required, no permission needed. See [`LICENSE`](./LICENSE).
+Remaining evidence needs: matched bank/borrower records linking dated CRE losses and capital effects to tighter approval criteria, rejected or reduced credit for comparable applicants and subsequent activity/income; comparable current student basic-needs observations; nutritional adequacy, displacement, nationwide utility shutoffs and interrupted care; matched-person employment transitions. Future releases are not pre-scored. No thresholds, within-domain weights or automatic phase rules were added.
